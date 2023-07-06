@@ -4,7 +4,7 @@ createApp({
     data(){
         return{
            productos: [],
-           url: 'http://127.0.0.1:5000/productos', 
+           url: 'http://nicolasrfperez.pythonanywhere.com/productos', 
            cargando: true,
            error: false
         }
@@ -25,7 +25,7 @@ createApp({
         },
 
         eliminar(producto) {
-            const url = 'http://localhost:5000/productos/'+producto;
+            const url = 'http://nicolasrfperez.pythonanywhere.com/productos/'+producto;
             let options = {
                 method: 'DELETE'
             }
